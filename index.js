@@ -8,5 +8,8 @@ app.use(cors());
 
 app.use('/cache', cacheRouter);
 
+app.get('/', (req, res) => {
+    console.log(req);
+})
 
 module.exports = app;
